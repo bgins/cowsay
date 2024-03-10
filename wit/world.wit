@@ -1,0 +1,7 @@
+package bgins:cowsay@0.1.0;
+
+world cowsay {
+  import wasi:logging/logging;
+
+  export say: func(message: string, width: u32) -> string;
+}
