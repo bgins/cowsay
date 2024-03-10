@@ -1,6 +1,6 @@
 # fortune
 
-This example runs the Cowsay Wasm component in a Homestar workflow. The workflow is injected with a fortune produced at the command line, then run on the Homestar runtime.
+This example runs the Cowsay Wasm component in a [Homestar][homestar] workflow. The workflow is injected with a fortune produced at the command line, then run on the Homestar runtime.
 
 The fortunes are borrowed from the [`fortune-kind` collection][fortune-kind-collection]. Please see the [`fortune-kind` licenses][fortune-kind-licenses] for reuse of `fortune-kind` and fortunes.
 
@@ -33,6 +33,8 @@ Add the component to IPFS:
 ```sh
 ipfs add --cid-version 1 ../../target/wasm32-wasi/release/cowsay.wasm
 ```
+
+Check that the CID reported by IPFS matches the `rsc` field in `workflow-template.json`. If not, update `workflow-template.json` with the reported CID.
 
 ### Generate a workflow
 
@@ -67,6 +69,7 @@ This command should print the cow saying a fortune.
 [fortune-kind]: https://crates.io/crates/fortune-kind
 [fortune-kind-collection]: https://github.com/cafkafk/fortune-kind/tree/main/fortunes
 [fortune-kind-licenses]: https://github.com/cafkafk/fortune-kind/tree/main/LICENSES
+[homestar]: https://github.com/ipvm-wg/homestar
 [ipfs-kubo]: https://docs.ipfs.tech/install/command-line/#install-official-binary-distributions
 [install-rust]: https://www.rust-lang.org/tools/install
 [top-level-readme]: ../../README.md

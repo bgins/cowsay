@@ -14,7 +14,7 @@ Cowsay implemented as a Wasm component.
                ||     ||
 ```
 
-This code was adapted from [rsay][rust-rsay].
+This project was adapted from [rsay][rust-rsay].
 
 ## Setup
 
