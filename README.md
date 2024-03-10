@@ -2,6 +2,18 @@
 
 Cowsay implemented as a Wasm component.
 
+```
+ _____________________
+/ This is the best, I \
+\ love being a cow!   /
+ ---------------------
+       \   ^__^
+        \  (oo)\_______
+           (__)\       )\/\
+               ||----w |
+               ||     ||
+```
+
 This code was adapted from [rsay][rust-rsay].
 
 ## Setup
