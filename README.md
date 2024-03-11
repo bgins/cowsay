@@ -26,6 +26,12 @@ Install [`cargo-component`][cargo-component]:
 cargo install cargo-component
 ```
 
+Add the `wasm32-wasi` target.
+
+```sh
+rustup target add wasm32-wasi
+```
+
 ## Build
 
 Build for the debug target:
